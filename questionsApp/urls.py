@@ -5,5 +5,5 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('psychotests.urls')),
-    path('', TemplateView.as_view('index.html'))
+    path('', TemplateView.as_view(temlate_name='index.html'))
 ]
