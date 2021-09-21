@@ -78,7 +78,17 @@ Seed the database:
 ```
   py manage.py seed
 ```
-Run server:
+
+Go to the './frontend' folder and install the frontend dependencies:
+```
+  npm install
+```
+
+And then:
+```
+  npm build
+```
+Back to the home folder, run the server:
 
 ``` bash
    py manage.py runserver
