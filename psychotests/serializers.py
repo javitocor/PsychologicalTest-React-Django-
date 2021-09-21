@@ -4,10 +4,13 @@ from .models import Question, Answer
 class AnswerSerializer(serializers.ModelSerializer):
   class Meta:
         model = Answer
-        fields = ['text', 'question']
+        fields = ['text', 'question', 'value']
 
 class QuestionSerializer(serializers.ModelSerializer):
-  answers = AnswerSerializer(read_only=True)
+  answers = AnswerSerializer(
+        many=True,
+        read_only=True
+    )
   class Meta:
         model = Question
-        fields = ['text', 'topic', 'answers']
+        fields = ['id', 'text', 'topic', 'answers']

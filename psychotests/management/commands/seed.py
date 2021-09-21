@@ -50,23 +50,24 @@ def seed_questions():
     question.save()
 
     initial=i*4
-    end=i+4
+    end=initial+4
     selected_answers = answers[initial:end]
-    for index, y in enumerate(selected_answers):
+    for index, ans in enumerate(selected_answers):
       if index == 0:
         value_ans = 2
+      elif index == 1:
+        value_ans = 4
+      elif index == 2:
+        value_ans = 6
       elif index == 3:
         value_ans = 8
-      else:
-        value_ans = index * 2
-        
+
       answer = Answer(
-        text=y,
-        question = question.id,
+        text=ans,
+        question=question,
         value = value_ans
       )
       answer.save()
-
 
 
 
