@@ -1,0 +1,22 @@
+.main {
+  height: 100%;
+  padding: 15.27rem 10rem;
+  background: url('https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-text-stroke-width: thin;
+}
+
+.color{
+  background-color: #d10056 !important;
+}
+
+.color2{
+  color: #d10056 !important;
+}
+
+.content {
+  height: 100%;
+}

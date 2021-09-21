@@ -1,0 +1,28 @@
+.content {
+  margin: 0 auto;
+  width: 90%;
+}
+ul {
+  padding-left: 0;
+  margin-top: 20px;
+}
+ul li {
+  display:inline;
+  font-size:32px;
+}
+li {
+  margin: 0 25px;
+}
+.form {
+  width: 88%;
+}
+.color2 {
+  color: #d10056 !important;
+}
+
+.size {
+  font-size: 18px;
+  }
+
+.main {
+}
