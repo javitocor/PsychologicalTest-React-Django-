@@ -8,3 +8,4 @@ class Question(models.Model):
 class Answer(models.Model):
     text = models.CharField(max_length=255, required=True)
     question = models.ForeignKey(Question, related_name='answers', on_delete=models.CASCADE)
+    value = models.PositiveIntegerField()
