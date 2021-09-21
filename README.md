@@ -25,7 +25,7 @@ Things you may want to c<!--
 
 # Introvert/Extrovert Test Django/React
 
->  A Blog built with Django where bloggers can signup/login, and perform CRUD operations for posts. Bloggers can search per tags or headlines and comment in posts.
+>  A one page app to test if you are an introvert or an extrovert person. Frontend built with React&Redux and the backend built with Django&Django Rest Framework.
 
 Additional description about the project and its features.
 
@@ -49,24 +49,18 @@ Test Page:
 ## Getting Started
 ### Usage
 To have this app on your pc, you need to:
-* [download](https://github.com/javitocor/Blog-Django/archive/main.zip) or clone this repo:
+* [download](https://github.com/javitocor/PsychologicalTest-React-Django-/archive/main.zip) or clone this repo:
   - Clone with SSH:
   ```
-    git@github.com:javitocor/Blog-Django.git
+    git@github.com:javitocor/PsychologicalTest-React-Django-.git
   ```
   - Clone with HTTPS
   ```
-    https://github.com/javitocor/Blog-Django.git
+    https://github.com/javitocor/PsychologicalTest-React-Django-.git
   ```
 
 * In the project directory, you can run:
 
-Create virtual enviroment with:
-
-``` bash
-py -m venv project-name
-project-name\Scripts\activate.bat
-```
 Install dependencies in your home folder with:
 
 ``` bash
@@ -79,6 +73,11 @@ Run migrations:
    py manage.py makemigrations
    py manage.py migrate
 ```
+Seed the database:
+
+```
+  py manage.py seed
+```
 Run server:
 
 ``` bash
@@ -89,6 +88,26 @@ Access the page by typing in your web browser
 ``` bash
    http://127.0.0.1:8000/
 ```
+## Information about the project
+### Endpoints
+```
+  Get all questions
+    get http://127.0.0.1:8000/api/questions/
+  Create a Question
+    post http://127.0.0.1:8000/api/questions/
+  Update a Question
+    put http://127.0.0.1:8000/api/questions/:id
+  Delete a question
+    delete http://127.0.0.1:8000/api/questions/:id
+  Get question's answer
+    get http://127.0.0.1:8000/api/questions/:id/answers
+  Create question's answer
+    post http://127.0.0.1:8000/api/questions/:id/answers
+  Delete single question's answer
+    delete http://127.0.0.1:8000/api/questions/:id/answers/:id
+```
+### Modify questions to show
+- You can modify the number of questions to show to the user by changing the number in 'pickQuestions' function at './frontend/src/containers/Test.js'. After seeding there are 14 questions with its 4 different answers, but you can add new ones using the endpoint proposed.
 
 ## Author
 
@@ -101,7 +120,7 @@ Access the page by typing in your web browser
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/javitocor/Blog-Django/issues).
+Feel free to check the [issues page](https://github.com/javitocor/PsychologicalTest-React-Django-/issues).
 
 ## Show your support
 
@@ -119,11 +138,11 @@ This project is [MIT](lic.url) licensed.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/javitocor/Blog-Django.svg?style=flat-square
-[contributors-url]: https://github.com/javitocor/Blog-Django/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/javitocor/Blog-Django.svg?style=flat-square
-[forks-url]: https://github.com/javitocor/Blog-Django/network/members
-[stars-shield]: https://img.shields.io/github/stars/javitocor/Blog-Django.svg?style=flat-square
-[stars-url]: https://github.com/javitocor/Blog-Django/stargazers
-[issues-shield]: https://img.shields.io/github/issues/javitocor/Blog-Django.svg?style=flat-square
-[issues-url]: https://github.com/javitocor/Blog-Django/issuesover:
+[contributors-shield]: https://img.shields.io/github/contributors/javitocor/PsychologicalTest-React-Django-.svg?style=flat-square
+[contributors-url]: https://github.com/javitocor/PsychologicalTest-React-Django-/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/javitocor/PsychologicalTest-React-Django-.svg?style=flat-square
+[forks-url]: https://github.com/javitocor/PsychologicalTest-React-Django-/network/members
+[stars-shield]: https://img.shields.io/github/stars/javitocor/PsychologicalTest-React-Django-.svg?style=flat-square
+[stars-url]: https://github.com/javitocor/PsychologicalTest-React-Django-/stargazers
+[issues-shield]: https://img.shields.io/github/issues/javitocor/PsychologicalTest-React-Django-.svg?style=flat-square
+[issues-url]: https://github.com/javitocor/PsychologicalTest-React-Django-/issuesover:
