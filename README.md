@@ -86,7 +86,7 @@ Go to the './frontend' folder and install the frontend dependencies:
 
 And then:
 ```
-  npm build
+  npm run build
 ```
 Back to the home folder, run the server:
 
